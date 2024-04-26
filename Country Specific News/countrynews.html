@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country News</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins';
+            font-weight: 550;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+            background-color: white;
+            color: black;
+        }
+        .box{
+            width: 700px;
+            height: 500px;
+            border: 3px solid aqua;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: burlywood;
+        }
+        input{
+            width: 350px;
+            margin-right: 10px;
+            height: 30px;
+            font-size: 15px;
+            border-radius: 10px;
+            padding-left: 10px;
+            border: 3px solid aqua;
+        }
+        button{
+            height: 35px;
+            width: 75px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        .result{
+            width: 650px;
+            height: 300px;
+            background-color: white;
+            color: black;
+        }
+        .handl{
+            margin-left: 10px;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1>Country Specific News</h1>
+    <div class="box">
+        <div class="inputdiv">
+            <input type="text" name="textinput" placeholder="Enter full country name without spaces">
+            <button>Search</button>
+        </div>
+        <div class="result"></div>
+    </div>
+    <script src="countrynews.js"></script>
+</body>
+</html>
